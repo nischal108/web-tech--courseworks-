@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages and Images</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            margin: 20px;
+        }
+
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .image-container {
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .image {
+            padding: 2vw;
+            object-fit: cover;
+            object-position: center;
+            max-width: 300px;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .description {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 0 10px 10px 0;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .programming-languages {
+            margin-top: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            color: #555;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        li::before {
+            content: '•';
+            color: #ff6f61;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="image-container">
+            <a href="http://www.python.org" target="_blank">
+            <img src="https://th.bing.com/th/id/OIP.dJToM1TiZiJA0GYwzDHwjQHaHY?rs=1&pid=ImgDetMain" alt="Image 1"
+                class="image">
+                </a>
+            <div class="description">
+                <h3>Python </h3>
+                <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics
+                    developed by Guido van Rossum. It was originally released in 1991. Designed to be easy as well as
+                    fun, the name "Python" is a nod to the British comedy group Monty Python.</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank">
+            <img src="https://th.bing.com/th/id/OIP.lrMPUKlpBVukVACvbhWD2QHaHZ?rs=1&pid=ImgDetMain" alt="Image 2"
+                class="image">
+            </a>
+            <div class="description">
+                <h3>JavaScript</h3>
+                <p>JavaScript, often abbreviated as JS, is a programming language and core technology of the World Wide
+                Web, alongside HTML and CSS. As of 2024, 98.9% of websites use JavaScript on the client side for webpage behavior,
+                often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code
+                on users' devices.</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <a href="https://www.java.com/en/" target="_blank">
+            <img src="https://lh3.googleusercontent.com/proxy/sEf48L7pNIgNnaqvnvjx5DK7_BfCroGnsYdywQNGDlo-gUggS58P5AHZh5U42zPWExN877AqisSjbEPqGgvqlY7TDIfRoejRnFPF4cX0sCqokIViefol9FX6MqSsspnjPlOm"
+                alt="Image 3" class="image">
+                </a>
+            <div class="description">
+                <h3>Java</h3>
+                <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation
+                dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run
+                anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to
+                recompile.</p>
+            </div>
+
+
+        </div>
+        <div class="programming-languages">
+            <h2>Top 10 Popular Programming Languages</h2>
+            <ul>
+                <a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank">
+                    <li>JavaScript</li>
+                </a>
+                <a href="http://www.python.org" target="_blank">
+                    <li>Python</li>
+                </a>
+                <a href="https://www.java.com/en/" target="_blank">
+                    <li>Java</li>
+                </a>
+                <a href="https://www.w3schools.com/cs/index.php" target="_blank">
+                    <li>C#</li>
+                </a>
+                <a href="https://www.w3schools.com/cpp/cpp_intro.asp" target="_blank">
+                    <li>C++</li>
+                </a>
+            </ul>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
