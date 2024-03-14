@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with double side heading</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        table{
+            border-radius: 16px;
+        }
+        table,
+        td,
+        th{
+            border-collapse: collapse;
+            border: 2px solid black;
+            padding: 2px;
+        }
+        td,
+        th{
+             padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Phone number</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>Nischal</td>
+                <td>98076556373</td>
+                <td>nichshfh@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

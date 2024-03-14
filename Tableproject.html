@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Table with CSS</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th, td {
+        height: 30px;
+    }
+
+    #main {
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+    }
+    .vertical-text {
+        font-size: 1.5rem;
+        font-weight: 500;
+        border: 3px solid black;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        transform: scaleY(1);
+        letter-spacing: 2px;
+        white-space: nowrap;
+        text-align: center;
+    }
+    tbody > tr:not(:nth-child(-n+3)) > th {
+    border: 3px solid black;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="main">
+    <table>
+        <tbody>
+        
+            <!-- Row 1 -->
+            <tr>
+                <!-- Columns -->
+                <th colspan="2">Time</th>
+                <th>7:<sup>30</sup> - 8:<sup>00</sup></th>
+                <th>8:<sup>00</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+            </tr>
+
+            <!-- row 2 -->
+            <tr>
+                <th colspan="2">Duration</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+            </tr>
+
+            <!-- row3 -->
+            <tr>
+                <th colspan="2">Period</th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>0</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+            </tr>
+
+            <!-- Monday  -->
+            <!-- row 4 -->
+            <tr style="border-top: 3px solid black;">
+                <th rowspan="3">Mon</th>
+                <th>4</th>
+                <th rowspan="15" class="vertical-text">Assembly & Registration in Class</th>
+                <td colspan="2">Mathematics</td>
+                <td colspan="2" style="border-left: 3px solid black;">AKuapen Twi</td>
+                <th rowspan="15" class="vertical-text">Break</th>
+                <td rowspan="3">Library</td>
+                <td colspan="2" style="border-left: 3px solid black;">Science</td>
+            </tr>
+
+            <tr>
+                <th>5</th>
+                <td colspan="2">History</td>
+                <td colspan="2" style="border-left: 3px solid black;">Mathematics</td>
+                <td colspan="2" style="border-left: 3px solid black;">Science</td>
+            </tr>
+
+            <tr>
+                <th>6</th>
+                <td colspan="2">Mathematics</td>
+                <td colspan="2" style="border-left: 3px solid black;">English Language</td>
+                <td colspan="2" style="border-left: 3px solid black;">Science</td>
+            </tr>
+
+
+            <!-- tuesday -->
+            <tr style="border-top: 3px solid black;">
+                <th rowspan="3">Tue</th>
+                <th>4</th>
+                <td colspan="2">Mathematics</td>
+                <td colspan="2" style="border-left: 3px solid black;">AKuapen Twi</td>
+                <td >Science</td>
+                <td colspan="2" style="border-left: 3px solid black;">Owip</td>
+            </tr>
+            
+            <tr>
+                <th>5</th>
+                <td colspan="2">History</td>
+                <td colspan="2" style="border-left: 3px solid black;">Mathematics</td>
+                <td>Science</td>
+                <td colspan="2" style="border-left: 3px solid black;">Owip</td>
+            </tr>
+
+            <tr>
+                <th>6</th>
+                <td colspan="2">Mathematics</td>
+                <td colspan="2" style="border-left: 3px solid black;">English Language</td>
+                <td>Science</td>
+                <td colspan="2" style="border-left: 3px solid black;">Owip</td>
+            </tr>
+
+
+            <!-- wednesday -->
+
+            <tr style="border-top: 3px solid black;">
+                <th rowspan="3">Wed</th>
+                <th>4</th>
+                <td >French</td>
+                <td colspan="2" style="border-left: 3px solid black;">English Language</td>
+                <td style="border-left: 3px solid black;">Computing</td>
+                <td >Maths</td>
+                <td colspan="2" style="border-left: 3px solid black;">History</td>
+            </tr>
+            
+            <tr>
+                <th>5</th>
+                <td >Twi</td>
+                <td style="border-left: 3px solid black;">French</td>
+                <td colspan="2" style="border-left: 3px solid black;">English Language</td>
+                <td >RME</td>
+                <td colspan="2" style="border-left: 3px solid black;">History</td>
+            </tr>
+
+            <tr>
+                <th>6</th>
+                <td colspan="2">Mathematics</td>
+                <td colspan="2" style="border-left: 3px solid black;">Akuapem Twi</td>
+                <td>Computing</td>
+                <td colspan="2" style="border-left: 3px solid black;">History</td>
+            </tr>
+
+            <!-- thurs -->
+
+
+            <tr style="border-top: 3px solid black;">
+                <th rowspan="3">Thurs</th>
+                <th>4</th>
+                <td colspan="2">Creative Arts</td>
+                <td colspan="2" style="border-left: 3px solid black;">History</td>
+                <td>English</td>
+                <td colspan="2" style="border-left: 3px solid black;">Mathematics</td>
+            </tr>
+            
+            <tr>
+                <th>5</th>
+                <td colspan="2">Creative Arts</td>
+                <td colspan="2" style="border-left: 3px solid black;">Science</td>
+                <td>OWOP</td>
+                <td colspan="2" style="border-left: 3px solid black;">Mathematics</td>
+            </tr>
+
+            <tr>
+                <th>6</th>
+                <td colspan="2">Creative Arts</td>
+                <td colspan="2" style="border-left: 3px solid black;">English Language</td>
+                <td>Twi</td>
+                <td colspan="2" style="border-left: 3px solid black;">Mathematics</td>
+            </tr>
+
+            <!-- fri -->
+
+            <tr style="border-top: 3px solid black;">
+                <th rowspan="3">Fri</th>
+                <th>4</th>
+                <td colspan="2">English Language</td>
+                <td colspan="2" style="border-left: 3px solid black;">Mathematics</td>
+                <td>RME</td>
+                <td colspan="2" style="border-left: 3px solid black;">OWOP</td>
+            </tr>
+            
+            <tr>
+                <th>5</th>
+                <td colspan="2">English Language</td>
+                <td style="border-left: 3px solid black;">Twi</td>
+                <td style="border-left: 3px solid black;">OWOP</td>
+                <td>OWOP</td>
+                <td colspan="2" style="border-left: 3px solid black;">Mathematics</td>
+            </tr>
+
+            <tr style="border-bottom: 3px solid black;">
+                <th>6</th>
+                <td >English</td>
+                <td colspan="2" style="border-left: 3px solid black;">OWOP</td>
+                <td style="border-left: 3px solid black;">French</td>
+                <td>Maths</td>
+                <td colspan="2" style="border-left: 3px solid black;">Mathematics</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
