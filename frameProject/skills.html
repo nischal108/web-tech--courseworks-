@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  .skill {
+    margin-bottom: 20px;
+  }
+
+  .skill-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .skill-progress {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .skill-progress-bar {
+    background-color: #4CAF50;
+    height: 100%;
+    width: 80%; 
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .skill-label {
+    font-size: 16px;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Skills</h1>
+  <div class="skill">
+    <div class="skill-title">HTML</div>
+    <div class="skill-progress">
+      <div class="skill-progress-bar"></div>
+    </div>
+    <div class="skill-label">80%</div>
+  </div>
+  <div class="skill">
+    <div class="skill-title">CSS</div>
+    <div class="skill-progress">
+      <div class="skill-progress-bar" style="width: 70%;"></div>
+    </div>
+    <div class="skill-label">70%</div>
+  </div>
+  <div class="skill">
+    <div class="skill-title">JavaScript</div>
+    <div class="skill-progress">
+      <div class="skill-progress-bar" style="width: 60%;"></div>
+    </div>
+    <div class="skill-label">60%</div>
+  </div>
+  <!-- Add more skills as needed -->
+</div>
+
+</body>
+</html>
