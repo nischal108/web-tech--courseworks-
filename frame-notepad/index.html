@@ -1,0 +1,27 @@
+
+<html>
+<title> hello world </title>
+ <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #topFrame, #leftFrame, #mainFrame {
+      border: 1px solid black;
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+  <frameset rows="10%, 80%" scrolling="no">
+    <frame id="topFrame" src="navigation.html" name="topFrame">
+    <frameset cols="10%, 90%">
+      <frame id="leftFrame" src="categories.html" name="leftFrame">
+      <frame id="mainFrame" src="home.html" name="mainFrame">
+    </frameset>
+  </frameset>
+<body>
+</body>
+</html
