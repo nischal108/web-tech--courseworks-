@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamro Electronics</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        #hero-section {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        #hero-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        #hero-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        #product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            width: 300px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .product-info p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .product-price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ff6600;
+        }
+
+        .buy-button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #e65000;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hamro Electronics</h1>
+        <p>Your one-stop shop for electronics</p>
+    </header>
+
+    <section id="hero-section">
+        <div>
+            <h2>Welcome to Hamro Electronics</h2>
+            <p>Find the best deals on laptops</p>
+            <button class="buy-button">Shop Now</button>
+        </div>
+    </section>
+
+    <section id="product-container">
+        <div class="product-card">
+            <img src="laptop1.jpg" alt="Laptop 1">
+            <div class="product-info">
+                <h3>Laptop Model 1</h3>
+                <p class="product-price">$999.99</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="laptop2.jpg" alt="Laptop 2">
+            <div class="product-info">
+                <h3>Laptop Model 2</h3>
+                <p class="product-price">$1299.99</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="laptop3.jpeg" alt="Laptop 3">
+            <div class="product-info">
+                <h3>Laptop Model 3</h3>
+                <p class="product-price">$899.99</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hamro Electronics. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+

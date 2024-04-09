@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Division Styling</title>
+<style>
+  #container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #first, #second, #third {
+    text-align:center;
+    font-weight:500;
+    width: 30%;
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #first {
+    background-color: #ffe0b3;
+  }
+  
+  #second {
+    background-color: #b3d9ff;
+  }
+  
+  #third {
+    background-color: #ccffcc;
+  }
+  
+  #first:hover, #second:hover, #third:hover{
+  cursor:pointer;
+  border: 3px solid #aaa;
+  }
+</style>
+</head>
+<body>
+  <div id="container">
+    <div id="first">
+      First Div
+    </div>
+    <div id="second">
+      Second Div
+    </div>
+    <div id="third">
+      Third Div
+    </div>
+  </div>
+</body>
+</html>
+
