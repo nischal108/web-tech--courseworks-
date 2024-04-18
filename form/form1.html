@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(0,196,204);
+            background: linear-gradient(90deg, rgba(0,196,204,1) 6%, rgba(42,144,211,1) 31%, rgba(124,42,224,1) 80%);
+        }
+
+        #container {
+            background-color: #fff;
+            width: 50%;
+            height: 95%;
+            border-radius: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        h4{
+            margin-right: 3vw;
+        }
+
+        /* Heading style */
+        #heading {
+            width: 100%;
+            background-color: #333;
+            height: 10%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+        }
+
+        form {
+            padding: 2vw 5vw;
+        }
+
+        /* Name style */
+        #name,
+        #company,
+        #email,
+        #phone,
+        #subject {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            font-size: 16px;
+            outline: none;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+
+
+        #name-inputs{
+            width: 78%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        /* company */
+        #company>input{
+            width: 78%;
+        }
+
+
+        #country-code>input{
+            width: 100px;
+        }
+
+        #inputs-numbers{
+            width: 78%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* email */
+        #email>input{
+            width: 78%;
+        }
+
+        #subject label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-size: 18px;
+        }
+
+        #subject select {
+            width: 78%;
+        }
+
+
+
+        /* radio buttons */
+        #existing-customer {
+            margin-bottom: 20px;
+        }
+
+        #existing-customer h4 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        h5{
+            opacity: 0.6;
+        }
+        #existing-customer input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        #existing-customer label {
+            font-size: 16px;
+            color: #333;
+        }
+
+
+        /* Register button */
+        #register button {
+            background-color: rgb(223, 22, 22);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        #register button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="heading">
+            <h2>Event Registration Form</h2>
+        </div>
+        <form action="">
+            <div id="name">
+                <h4>Name</h4>
+                <div id="name-inputs">
+                    <div id="first-name">
+                        <input type="text">
+                        <h5>First Name</h5>
+                    </div>
+                    <div id="last-name">
+                        <input type="text">
+                        <h5>Last Name</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="company">
+                <h4>Company</h4>
+                <input type="text">
+            </div>
+            <div id="email">
+                <h4>Email</h4>
+                <input type="email" name="email" id="user-email">
+            </div>
+            <div id="phone">
+                <h4>Phone</h4>
+                <div id="inputs-numbers">
+                                    <div id="country-code">
+                                        <input type="number">
+                                        <h5>Country-code</h5>
+                                    </div>
+                                    <div id="Phn-number">
+                                        <input type="number">
+                                        <h5>Phone Number</h5>
+                                    </div>
+                </div>
+            </div>
+            <div id="subject">
+                <h4>Subject</h4>
+                <select id="subject" name="subject">
+                    <option value="english">English</option>
+                    <option value="nepali">Nepali</option>
+                    <option value="social">Social</option>
+                </select>
+            </div>
+            <div id="existing-customer">
+                <h4>Are you an existing customer?</h4>
+                <input type="radio" id="yes" name="option" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="option" value="no">
+                <label for="no">No</label>
+            </div>
+            <div id="register">
+                <button>Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
