@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#parent{
+    width: 40vw;
+    height: 40vw;
+    background-color: green;
+    position: relative;
+    border-radius: 13px;
+}
+
+#child{
+    width: 15vw;
+    height: 15vw;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+
+#child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+    font-size: 2rem;
+    border-radius: 13px;
+    
+}
