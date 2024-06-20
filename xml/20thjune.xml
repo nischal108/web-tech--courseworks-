@@ -1,0 +1,28 @@
+<!DOCTYPE students [
+    <!ELEMENT students (student+)>
+    <!ELEMENT student (name, address+, phone, website)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT address (#PCDATA)>
+    <!ATTLIST address
+         type (permanent|temporary) #REQUIRED>
+    <!ELEMENT phone (#PCDATA)>
+    <!ATTLIST phone 
+        length CDATA #FIXED "10">
+    <!ELEMENT website (#PCDATA)>
+]>
+<students>
+    <student>
+        <name>Ram Shrestha</name>
+        <address type="permanent">Kathmandu, Nepal</address>
+        <address type="temporary">Lalitpur, Nepal</address>
+        <phone length="10">9812345678</phone>
+        <website>http://www.ramshrestha.com</website>
+    </student>
+    <student>
+        <name>Shyam Thapa</name>
+        <address type="permanent">Pokhara, Nepal</address>
+        <address type="temporary">Chitwan, Nepal</address>
+        <phone length="10">9801234567</phone>
+        <website>http://www.shyamthapa.com</website>
+    </student>
+</students>
