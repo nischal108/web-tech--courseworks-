@@ -1,8 +1,5 @@
 <!ELEMENT TVSCHEDULE (channel+)>
-<!ATTLIST TVSCHEDULE Name CDATA #REQUIRED>
-
 <!ELEMENT channel (banner, day+)>
-<!ATTLIST channel Chan CDATA #REQUIRED>
 
 <!ELEMENT banner (#PCDATA)>
 
@@ -13,12 +10,16 @@
 <!ELEMENT holiday (#PCDATA)>
 
 <!ELEMENT programslot (Time, Title, Description?)>
-<!ATTLIST programslot Vtr CDATA #IMPLIED>
 
 <!ELEMENT Time (#PCDATA)>
 
 <!ELEMENT Title (#PCDATA)>
-<!ATTLIST Title Rating CDATA #IMPLIED
-                 Language CDATA #IMPLIED>
 
 <!ELEMENT Description (#PCDATA)>
+
+
+<!ATTLIST TVSCHEDULE Name CDATA #REQUIRED>
+<!ATTLIST channel Chan CDATA #REQUIRED>
+<!ATTLIST programslot Vtr CDATA #IMPLIED>
+<!ATTLIST Title Rating CDATA #IMPLIED
+                 Language CDATA #IMPLIED>
