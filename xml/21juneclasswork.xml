@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE bookscollection [
-  <!ELEMENT bookscollection (book+)>
+<!DOCTYPE library [
+  <!ELEMENT library (book+)>
   <!ELEMENT book (title, author, year, price)>
   <!ELEMENT title (#PCDATA)>
   <!ELEMENT author (#PCDATA)>
@@ -9,7 +9,7 @@
   <!ATTLIST book 
             booksn CDATA #REQUIRED>
 ]>
-<bookscollection>
+<library>
   <book booksn="978-9937-0-0630-1">
     <title> Shirish ko Phul</title>
     <author>Parijaat</author>
@@ -28,4 +28,4 @@
     <year>2005</year>
     <price>400</price>
   </book>
-</bookscollection>
+</library>
