@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookscollection [
+  <!ELEMENT bookscollection (book+)>
+  <!ELEMENT book (title, author, year, price)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT year (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ATTLIST book 
+            booksn CDATA #REQUIRED>
+]>
+<bookscollection>
+  <book booksn="978-9937-0-0630-1">
+    <title> Shirish ko Phul</title>
+    <author>Parijaat</author>
+    <year>1964</year>
+    <price>300</price>
+  </book>
+  <book booksn="978-9937-0-0631-8">
+    <title>Seto Dharti</title>
+    <author>Amar Neupane</author>
+    <year>2012</year>
+    <price>350</price>
+  </book>
+  <book booksn="978-9937-0-0632-5">
+    <title>Summer love</title>
+    <author>Subin Bhattarai</author>
+    <year>2005</year>
+    <price>400</price>
+  </book>
+</bookscollection>

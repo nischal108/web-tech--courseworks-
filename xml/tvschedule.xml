@@ -23,3 +23,50 @@
 <!ATTLIST programslot Vtr CDATA #IMPLIED>
 <!ATTLIST Title Rating CDATA #IMPLIED
                  Language CDATA #IMPLIED>
+
+<!DOCTYPE TVSCHEDULE SYSTEM "tvschedule.dtd">
+<TVSCHEDULE Name="Daily TV Schedule">
+    <channel Chan="001">
+        <banner>Channel 1 Banner</banner>
+        <day>
+            <date>2024-06-20</date>
+            <holiday>Public Holiday</holiday>
+            <programslot Vtr="1">
+                <Time>08:00</Time>
+                <Title Rating="PG" Language="English">Morning Show</Title>
+                <Description>A morning talk show</Description>
+            </programslot>
+            <programslot>
+                <Time>10:00</Time>
+                <Title>News Hour</Title>
+            </programslot>
+        </day>
+        <day>
+            <date>2024-06-21</date>
+            <programslot>
+                <Time>09:00</Time>
+                <Title Language="Spanish">Cartoons</Title>
+                <Description>Children's cartoons</Description>
+            </programslot>
+        </day>
+    </channel>
+    <channel Chan="002">
+        <banner>Channel 2 Banner</banner>
+        <day>
+            <date>2024-06-20</date>
+            <programslot>
+                <Time>07:00</Time>
+                <Title Rating="G">Early Bird Show</Title>
+                <Description>A show for early risers</Description>
+            </programslot>
+        </day>
+        <day>
+            <date>2024-06-21</date>
+            <programslot>
+                <Time>12:00</Time>
+                <Title Rating="18+">Midday Movie</Title>
+                <Description>An action-packed thriller</Description>
+            </programslot>
+        </day>
+    </channel>
+</TVSCHEDULE>
