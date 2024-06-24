@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<college xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="college.xsd">
+
+    <student>
+        <name>John Doe</name>
+        <address>123 Main Street</address>
+        <phone>555-1234</phone>
+    </student>
+    
+    <student>
+        <name>Jane Smith</name>
+        <address>456 Elm Avenue</address>
+        <phone>555-5678</phone>
+    </student>
+    
+    <subject>BCA</subject>
+    <subject>BIT</subject>
+    <subject>MIT</subject>
+    
+</college>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student xmlns="http://nischal.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="tute11.xsd">
+  <fname>Nischal</fname>
+  <lname>Bhattarai</lname>
+  <phone>0943984u39284</phone>
+</student>

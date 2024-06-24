@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TU xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file://path-to-your-schema.xsd">
+
+  <employee>
+    <post>Manager</post>
+    <salary>40000</salary>
+    <gender>male</gender>
+    <username>johndoe1</username>
+    <password>abcdefgh</password>
+  </employee>
+
+  <employee>
+    <post>Engineer</post>
+    <salary>30000</salary>
+    <gender>female</gender>
+    <username>janedoe2</username>
+    <password>Abcdefgh</password>
+  </employee>
+
+  <!-- Add more employee entries as needed -->
+
+</TU>
