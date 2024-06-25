@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="products.xsl"?>
+<products>
+    <product>
+        <productname>Smartphone X</productname>
+        <category>Electronics</category>
+        <price>999</price>
+        <quantity>20</quantity>
+    </product>
+    <product>
+        <productname>Laptop Pro</productname>
+        <category>Electronics</category>
+        <price>1500</price>
+        <quantity>8</quantity>
+    </product>
+    <product>
+        <productname>Wireless Headphones</productname>
+        <category>Electronics</category>
+        <price>200</price>
+        <quantity>25</quantity>
+    </product>
+    <product>
+        <productname>Novel Book</productname>
+        <category>Books</category>
+        <price>15</price>
+        <quantity>50</quantity>
+    </product>
+    <product>
+        <productname>Science Journal</productname>
+        <category>Books</category>
+        <price>30</price>
+        <quantity>5</quantity>
+    </product>
+    <product>
+        <productname>Blender</productname>
+        <category>Home Appliances</category>
+        <price>120</price>
+        <quantity>12</quantity>
+    </product>
+</products>

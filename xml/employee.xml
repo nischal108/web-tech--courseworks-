@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employee.xsl"?>
+
+<employees>
+    <employee>
+        <name>Ram</name>
+        <department>IT</department>
+        <job-title>Developer</job-title>
+        <salary>80000</salary>
+        <email>ram@gmail.com</email>
+    </employee>
+    <employee>
+        <name>Shyam</name>
+        <department>HR</department>
+        <job-title>Manager</job-title>
+        <salary>75000</salary>
+        <email>shyam@gmail.com</email>
+    </employee>
+    <employee>
+        <name>Gita</name>
+        <department>Finance</department>
+        <job-title>Analyst</job-title>
+        <salary>70000</salary>
+        <email>gita@gmail.com</email>
+    </employee>
+    <employee>
+        <name>Hari</name>
+        <department>Marketing</department>
+        <job-title>Executive</job-title>
+        <salary>65000</salary>
+        <email>hari@gmail.com</email>
+    </employee>
+</employees>
